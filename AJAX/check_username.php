@@ -11,4 +11,6 @@ if (isset($_POST['username'])) {
     } else {
         echo json_encode(['exists' => false]);
     }
+} else {
+    echo json_encode(['error' => 'Invalid request']);
 }
